@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 0px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #eeecf0;
+  border-radius: 12px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 0px;
+}
+* { box-sizing: border-box; }
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #eee;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: #333;
+    user-select: none;
+    border-radius: 12%;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #000(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fadeq;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+.animated-image {
+    width: 0px;
+    transition: transform 2s ease-in-out;
+}
+
+.animated-image:hover {
+    transform: scale(1.05);
+}
+img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+}
+.text {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 100px);
+    color: #000;
+    font-family: Arial;
+    font-size: 50px;
+}
+.wrapper {
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .container {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 25px;
+    border-radius: 0.5em;
+    background-color: #21242b;
+    border-bottom: 10px solid #18f98f;
+  }
+  i {
+    color: #18f98f;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  span.text {
+    color: #e0e0e0;
+    font-size: 1em;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+   text-align: center;
+  }
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      width: 85vw;
+    }
+    .container {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12 px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .container {
+      width: calc(50% - 40px);
+      height: 30vmin;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .wrapper {
+      gap: 15px;
+    }
+    .container {
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+    }
+  }
+
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+}
+.counter {
+    font-size: 4em;
+    color: #eee;
+    text-align: center;
+} 

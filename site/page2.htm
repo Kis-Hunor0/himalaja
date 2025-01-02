@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<html>
+    <link rel="icon" href="visszhang.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    * {box-sizing: border-box;}
+    </style>
+    </head>
+    <body>
+    <div class="topnav">
+      <a class="button"><a href="page1.htm" target="_self">Főoldal</a>
+      <a class="button"><a href="page2.htm" target="_self">Tagok</a>5
+      </div>
+    </div>
+    </body>
+    <body>
+        <title> Rolunk </title>
+        <h1>Tagog</h1>
+        <body style="background-color:#DBF2F9";>
+    </body>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+     />
+     <body>
+        <div class="wrapper">
+          <div class="container"> 
+            <i class="fas fa-utensils"></i>
+            <span class="counter" data-target="15">000</span>
+            <span class="text">Aktív tagok száma</span>
+          </div>
+          <div class="container">
+            <i class="fas fa-smile-beam"></i>
+            <span class="counter" data-target="340">000</span>
+            <span class="text"></span>
+          </div>
+          <div class="container">
+            <i class="fas fa-list"></i>
+            <span class="counter" data-target="225">000</span>
+            <span class="text"></span>
+          </div>
+          <div class="container">
+            <i class="fas fa-star"></i>
+            <span class="counter" data-target="280">000</span>
+            <span class="text"></span>
+          </div>
+        </div>
+      </body>
+
+
+      <body>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const counters = document.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const increment = target / 200;
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + increment);
+                            setTimeout(updateCount, 101);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            });
+        </script>
+    </body>
+
+
+    <center>
+        <style>
+            button {
+            background-color: #fff;
+            color: #fff;
+            padding: 12px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            border: 2px solid #000;
+            }
+            button:hover {
+            background-color: #cecece;
+            color: white;
+            }
+        </style>
+            <button onclick="button"><a href="page1.html" target="_self">Főoldal</a></button>
+        </center>
+        <body>
+            <header></header>
+            <main></main>
+            <footer></footer>
+        </body>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h4>Social media: </h4>
+                        <ul>
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <li><a href="https://www.instagram.com/visszhang.alf/"><img src="insta.png" width="48" height=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul><meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Elérhetőségünk: </h4>
+                        <ul>
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <li><a href="mailto: v.foszerkesztoseg@gmail.com">Email: v.foszerkesztoseg@gmail.com</a></li>
+                            <li><a href="tel: +40 756 794 217">Telefonszám: +40 756 794 217 - Buna Zenkő </a></li>
+                            <li><a href="https://www.google.ro/maps/place/National+College+of+%C3%81prily+Lajos/@45.6447843,25.5859121,17z/data=!4m15!1m8!3m7!1s0x40b35b70a088f2eb:0x6269cceeb15e1aac!2sStrada+Dup%C4%83+Ziduri+3,+Bra%C8%99ov+500026!3b1!8m2!3d45.6447843!4d25.588487!16s%2Fg%2F11c1685tps!3m5!1s0x40b35b709918ea53:0x54eb02dac7b8374f!8m2!3d45.6446507!4d25.5877512!16s%2Fg%2F1239_8ps?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Cím: Brassó, Dupa Ziduri, Nr. 3, 500026</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        
+</html>
